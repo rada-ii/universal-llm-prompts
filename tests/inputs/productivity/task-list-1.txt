@@ -1,0 +1,13 @@
+Task list:
+1. Finish quarterly report (due Friday, high impact, 4 hours estimated)
+2. Review and approve marketing materials (due next week, medium impact, 1 hour)
+3. Prepare presentation for board meeting (due in 2 weeks, high impact, 6 hours)
+4. Respond to client emails (ongoing, medium impact, 30 minutes daily)
+5. Update project documentation (no deadline, low impact, 2 hours)
+6. Schedule team performance reviews (due end of month, high impact, 3 hours)
+7. Research new software tools (no deadline, medium impact, 4 hours)
+8. Organize desk and files (no deadline, low impact, 1 hour)
+
+Context: Marketing manager with team of 5, busy quarter with product launch
+Goals: Complete product launch successfully, maintain team productivity
+Constraints: Only 6 hours per day available for deep work, many meetings

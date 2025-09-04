@@ -1,0 +1,20 @@
+Decision context: Small marketing agency (8 employees) needs to choose a new project management tool to replace current system (basic spreadsheets and email)
+
+Available options:
+1. Asana - $25/month per user, comprehensive features
+2. Trello - $10/month per user, simple board system  
+3. Monday.com - $20/month per user, customizable workflows
+4. Keep current system - $0, familiar but inefficient
+
+Constraints: 
+- Budget maximum $200/month
+- Must integrate with current email system (Gmail)
+- Team has mixed comfort levels with technology
+- Need to implement within 30 days
+- Cannot afford downtime during client projects
+
+Stakeholders:
+- Project managers (2 people) - want advanced features
+- Creative team (4 people) - want simple, visual interface  
+- Account managers (2 people) - need client communication features
+- Owner - wants cost control and ROI

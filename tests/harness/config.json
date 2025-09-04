@@ -1,0 +1,31 @@
+{
+  "description": "Test configuration for Universal LLM Prompts",
+  "test_categories": {
+    "jobs": {
+      "prompt_file": "prompts/templates/json-job-extraction.md",
+      "input_folder": "tests/inputs/jobs/",
+      "expected_format": "JSON"
+    },
+    "messages": {
+      "prompt_file": "prompts/templates/csv-message-export.md",
+      "input_folder": "tests/inputs/messages/",
+      "expected_format": "CSV"
+    },
+    "business": {
+      "prompt_file": "prompts/business/business-plan-generator.md",
+      "input_folder": "tests/inputs/business/",
+      "expected_format": "JSON"
+    },
+    "education": {
+      "prompt_file": "prompts/education/lesson-plan-creator.md",
+      "input_folder": "tests/inputs/education/",
+      "expected_format": "JSON"
+    }
+  },
+  "ai_settings": {
+    "temperature": 0.1,
+    "max_tokens": 2000,
+    "top_p": 1.0
+  },
+  "notes": "Use these settings for consistent test results across different AI models"
+}

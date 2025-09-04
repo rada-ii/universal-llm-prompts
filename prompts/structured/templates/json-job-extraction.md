@@ -35,7 +35,7 @@ Convert job postings into structured JSON with confidence scoring and error hand
 
 ## Test Cases
 
-✅ Happy Path
+Happy Path
 
 Input:
 

@@ -1,0 +1,32 @@
+Customer Satisfaction Survey Results - Q4 2023
+Survey methodology: Anonymous online survey sent to all customers who made purchases in last 6 months
+Sample size: 1,247 customers contacted, 312 responses (25% response rate)
+Survey period: December 1-15, 2023
+
+Overall satisfaction: 7.2/10 (compared to 6.8 in Q3 2023)
+Product quality: 8.1/10
+Customer service: 6.4/10
+Shipping experience: 7.6/10
+Website usability: 7.9/10
+Value for money: 6.9/10
+
+Demographics:
+- Age 18-29: 28% of responses, average satisfaction 7.5/10
+- Age 30-44: 45% of responses, average satisfaction 7.1/10  
+- Age 45+: 27% of responses, average satisfaction 6.9/10
+
+Purchase frequency:
+- First-time buyers: 35% of responses, satisfaction 6.8/10
+- Repeat customers: 65% of responses, satisfaction 7.4/10
+
+Top complaints:
+1. Slow customer service response (mentioned by 42% of dissatisfied customers)
+2. Shipping delays during holiday season (38%)
+3. Limited product availability (31%)
+4. Website search functionality (24%)
+
+Positive feedback themes:
+1. Product quality and durability (mentioned by 73% of satisfied customers)
+2. Easy ordering process (64%)
+3. Competitive pricing (58%)
+4. Fast shipping when available (52%)
