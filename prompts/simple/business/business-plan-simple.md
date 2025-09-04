@@ -2,7 +2,7 @@
 
 ## What this does:
 
-Creates professional business plan sections ready for investors, loans, or strategic planning. Get polished, well-structured content you can use immediately in presentations or documents.
+Creates professional business plan sections ready for investors, loans, or strategic planning. Get polished, well-structured content for presentations or documents.
 
 ## How to use:
 
@@ -28,6 +28,8 @@ Create a professional business plan section for my business. Format it as a comp
 - Business stage: [CURRENT STATUS - example: "Concept stage" or "6 months of operations"]
 - Funding goal: [IF SEEKING INVESTMENT - example: "$250,000 seed round" or "N/A"]
 - Timeline: [LAUNCH PLANS - example: "MVP in 3 months, full launch in 6 months"]
+- Market size: [TARGET MARKET DATA - example: "12.3 million households in major metros"]
+- Competition: [MAIN COMPETITORS - example: "Traditional boarding facilities, informal pet sitting"]
 
 Create a professional section that includes:
 
@@ -47,25 +49,26 @@ Our target market consists of urban professionals aged 25-45 with household inco
 
 Key Success Factors:
 • Comprehensive background checks and insurance for all sitters
-• Real-time GPS tracking and photo updates during visits  
+• Real-time GPS tracking and photo updates during visits
 • Seamless booking platform with 24/7 customer support
 • Competitive 15% commission structure attracting quality sitters
 • Integration with veterinary services for emergency situations
 
 We project reaching 10,000 active users within 18 months, generating $2.4M in annual revenue by year two. With proven traction in our initial test market and $250,000 in seed funding, PawPal is positioned to capture significant market share in the $24B pet care industry.
 
+## Section Options:
+
+**Executive Summary** - High-level overview for investors
+**Market Analysis** - Customer demographics and competition research  
+**Product Description** - Detailed explanation of your offering
+**Marketing Strategy** - How you'll reach and acquire customers
+**Financial Overview** - Revenue projections and funding needs
+**Operations Plan** - How the business will run day-to-day
+
 ## Tips for Success:
 
-1. **Be specific** - Include actual numbers, dates, and concrete details rather than vague statements
-2. **Focus on benefits** - Explain how your business solves real problems for customers
-3. **Use data** - Include market size, target demographics, or early results if available
+1. **Be specific** - Include actual numbers, dates, and concrete details
+2. **Focus on benefits** - Explain how your business solves real problems
+3. **Use data** - Include market size, target demographics, or early results
 4. **Keep it professional** - Avoid overly casual language while remaining readable
-
-## Choose Your Section:
-
-- **Executive Summary** - High-level overview for investors (most popular)
-- **Market Analysis** - Customer demographics and competition research
-- **Product Description** - Detailed explanation of your offering
-- **Marketing Strategy** - How you'll reach and acquire customers
-- **Financial Overview** - Revenue projections and funding needs
-- **Operations Plan** - How the business will run day-to-day
+5. **Include competitive analysis** - Show how you differ from existing solutions

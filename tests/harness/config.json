@@ -2,30 +2,65 @@
   "description": "Test configuration for Universal LLM Prompts",
   "test_categories": {
     "jobs": {
-      "prompt_file": "prompts/templates/json-job-extraction.md",
+      "prompt_file": "prompts/structured/templates/json-job-extraction.md",
       "input_folder": "tests/inputs/jobs/",
       "expected_format": "JSON"
     },
     "messages": {
-      "prompt_file": "prompts/templates/csv-message-export.md",
+      "prompt_file": "prompts/structured/templates/csv-message-export.md",
       "input_folder": "tests/inputs/messages/",
       "expected_format": "CSV"
     },
     "business": {
-      "prompt_file": "prompts/business/business-plan-generator.md",
+      "prompt_file": "prompts/simple/business/business-plan-simple.md",
       "input_folder": "tests/inputs/business/",
-      "expected_format": "JSON"
+      "expected_format": "TEXT"
     },
     "education": {
-      "prompt_file": "prompts/education/lesson-plan-creator.md",
+      "prompt_file": "prompts/simple/education/lesson-plan-simple.md",
       "input_folder": "tests/inputs/education/",
+      "expected_format": "TEXT"
+    },
+    "sentiment": {
+      "prompt_file": "prompts/structured/classification/sentiment-analysis.md",
+      "input_folder": "tests/inputs/sentiment/",
+      "expected_format": "JSON"
+    },
+    "email_classification": {
+      "prompt_file": "prompts/structured/classification/email-classifier-structured.md",
+      "input_folder": "tests/inputs/emails/",
       "expected_format": "JSON"
     }
   },
   "ai_settings": {
-    "temperature": 0.1,
-    "max_tokens": 2000,
-    "top_p": 1.0
+    "simple_prompts": {
+      "temperature": 0.3,
+      "max_tokens": 2000,
+      "top_p": 1.0
+    },
+    "structured_prompts": {
+      "temperature": 0.1,
+      "max_tokens": 1000,
+      "top_p": 1.0
+    }
   },
-  "notes": "Use these settings for consistent test results across different AI models"
+  "platform_compatibility": {
+    "chatgpt_4": {
+      "reliability": "high",
+      "best_for": ["business", "general"]
+    },
+    "claude_3": {
+      "reliability": "high",
+      "best_for": ["analysis", "structured"]
+    },
+    "gemini_pro": {
+      "reliability": "medium",
+      "best_for": ["creative"]
+    }
+  },
+  "quality_standards": {
+    "min_test_cases": 3,
+    "required_platforms": ["chatgpt_4", "claude_3"],
+    "max_response_time": "30_seconds"
+  }
 }

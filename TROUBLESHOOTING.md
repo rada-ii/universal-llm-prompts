@@ -1,10 +1,10 @@
 # Troubleshooting Guide
 
-Having issues with prompts? This guide covers the most common problems and their solutions.
+Having issues with prompts? This guide covers common problems and solutions.
 
 ## Quick Fixes for Common Problems
 
-### 🤖 AI adds extra text before/after my JSON output
+### AI adds extra text before/after JSON output
 
 **Problem:** Getting explanations or formatting instead of clean JSON/CSV
 
@@ -29,13 +29,13 @@ Hope this helps!
 
 ---
 
-### 📝 Output doesn't match my needs exactly
+### Output doesn't match needs exactly
 
 **Problem:** Getting generic or irrelevant results
 
 **Solutions:**
 
-1. **Add specific examples** in your prompt:
+1. **Add specific examples:**
 
    ```
    Instead of: "Write a business plan"
@@ -62,7 +62,7 @@ Hope this helps!
 
 ---
 
-### 🔄 Inconsistent results across different AI platforms
+### Inconsistent results across platforms
 
 **Problem:** Same prompt gives different quality results on different platforms
 
@@ -76,20 +76,14 @@ Hope this helps!
 **Solutions:**
 
 1. **Use compatibility headers** - Our structured prompts include these
-2. **Test platform-specific versions:**
-
-   - For ChatGPT: More direct instructions work better
-   - For Claude: Longer, detailed prompts are fine
-   - For Gemini: Shorter, focused prompts reduce verbosity
-
-3. **Adjust for platform quirks:**
-   - ChatGPT: Sometimes needs explicit format reminders
-   - Claude: Excellent at following complex instructions
-   - Gemini: May need "be concise" instruction
+2. **Adjust for platform quirks:**
+   - ChatGPT: More direct instructions work better
+   - Claude: Longer, detailed prompts are fine
+   - Gemini: Shorter, focused prompts reduce verbosity
 
 ---
 
-### ❓ Not sure which prompt to use for my situation
+### Not sure which prompt to use
 
 **Decision Tree:**
 
@@ -117,7 +111,7 @@ Hope this helps!
 
 ---
 
-### ⏱️ Prompts are too slow or hit token limits
+### Prompts are too slow or hit token limits
 
 **Problem:** AI stops mid-response or takes too long
 
@@ -147,7 +141,7 @@ Hope this helps!
 
 ---
 
-### 🎯 Results are too generic or obvious
+### Results are too generic or obvious
 
 **Problem:** Getting textbook answers instead of practical advice
 
@@ -178,7 +172,7 @@ Hope this helps!
 
 ---
 
-### 🔧 Technical prompts aren't working
+### Technical prompts aren't working
 
 **Problem:** Structured prompts returning errors or malformed data
 
@@ -203,29 +197,29 @@ Hope this helps!
 
 ### ChatGPT Issues
 
-**Problem:** Stops mid-response  
+**Problem:** Stops mid-response
 **Fix:** Ask "Continue" or break task into smaller parts
 
-**Problem:** Adds explanations to structured output  
+**Problem:** Adds explanations to structured output
 **Fix:** End prompt with "Return only the [format], no additional text"
 
-**Problem:** Inconsistent formatting  
+**Problem:** Inconsistent formatting
 **Fix:** Use specific examples in your prompt
 
 ### Claude Issues
 
-**Problem:** Too verbose for simple tasks  
+**Problem:** Too verbose for simple tasks
 **Fix:** Add "Keep it concise" or use ChatGPT for shorter outputs
 
-**Problem:** Occasionally refuses reasonable requests  
+**Problem:** Occasionally refuses reasonable requests
 **Fix:** Rephrase to be more specific about business context
 
 ### Gemini Issues
 
-**Problem:** Adds commentary to data outputs  
+**Problem:** Adds commentary to data outputs
 **Fix:** Use Claude or ChatGPT for pure data extraction
 
-**Problem:** Sometimes ignores format requirements  
+**Problem:** Sometimes ignores format requirements
 **Fix:** Repeat format requirements at end of prompt
 
 ## Advanced Troubleshooting
@@ -263,6 +257,60 @@ Hope this helps!
 - Give examples of good vs. bad outputs
 - Use iterative refinement (start basic, then add details)
 
+## Error Code Reference
+
+### Structured Prompt Errors
+
+**insufficient_data**
+
+```json
+{
+  "error": "insufficient_data",
+  "available_fields": ["title"],
+  "minimum_required": ["title", "company"]
+}
+```
+
+**Solution:** Provide more complete input information
+
+**format_violation**
+
+```json
+{ "error": "format_violation", "note": "Invalid JSON syntax in response" }
+```
+
+**Solution:** Check temperature settings, try different platform
+
+**parsing_error**
+
+```json
+{
+  "error": "parsing_error",
+  "issue": "Unrecognized salary format",
+  "raw_text": "$ABC per hour"
+}
+```
+
+**Solution:** Provide clearer, standard format input data
+
+**ambiguous_input**
+
+```json
+{
+  "clarifying_question": "What specific role and company are you asking about?",
+  "parsing_confidence": "low"
+}
+```
+
+**Solution:** Be more specific in your input
+
+### Simple Prompt Issues
+
+**Generic Output:** Prompt needs more specific context and constraints
+**Incomplete Response:** Break into smaller, focused requests
+**Wrong Format:** Clarify desired output format in prompt
+**Irrelevant Content:** Add more specific examples and use cases
+
 ## Getting Help
 
 ### Before asking for help:
@@ -286,6 +334,7 @@ Hope this helps!
 3. **Your input** (sanitized if needed)
 4. **Expected vs. actual output**
 5. **Any error messages**
+6. **Temperature and other settings used**
 
 ### Community resources:
 
@@ -301,12 +350,43 @@ Hope this helps!
 2. **Use examples** - Show what good output looks like
 3. **Provide context** - Explain your situation and constraints
 4. **Test iteratively** - Start simple, add complexity gradually
+5. **Follow temperature guidelines** - 0.1 for structured, 0.3 for simple
 
-### Platform selection:
+### Platform selection guide:
 
 - **For business documents:** ChatGPT 4
 - **For data analysis:** Claude 3
 - **For creative content:** Any platform works well
 - **For automation:** Claude 3 or ChatGPT 4
+- **Budget option:** GPT-3.5 (may need prompt adjustments)
+
+### Quality assurance checklist:
+
+- [ ] Prompt produces expected output format
+- [ ] Results are immediately usable
+- [ ] Works consistently across test cases
+- [ ] Handles edge cases gracefully
+- [ ] Error messages are helpful when things go wrong
+
+## Performance Expectations
+
+### Normal Response Times
+
+- Simple prompts: 10-25 seconds
+- Structured prompts: 5-15 seconds
+- Complex analysis: 20-45 seconds
+
+### Success Rates
+
+- Well-formed inputs: >95% success
+- Edge cases: >85% success
+- Error recovery: >90% helpful responses
+
+### When to Expect Issues
+
+- Very long inputs (>5000 words)
+- Highly ambiguous requests
+- Mixing multiple prompt types
+- Using unsupported platforms
 
 Remember: These prompts are tested and working - most issues come from platform differences or input formatting. When in doubt, try the exact test cases first!
