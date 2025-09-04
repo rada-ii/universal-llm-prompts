@@ -1,0 +1,121 @@
+# Test Email Subjects for Email Classification
+
+# URGENT CATEGORY (High Priority, High Confidence)
+CRITICAL: Database server failure - all services down
+SECURITY ALERT: Unauthorized access detected on your account
+URGENT: Client data breach - immediate response required
+COMPLIANCE DEADLINE: Tax filing due by 5pm today
+EMERGENCY: Office evacuation - do not return to building
+
+# ACTION REQUIRED (Mixed Priority, High Confidence)
+Please approve budget proposal by end of week
+Action needed: Sign and return employment contract
+Your approval required: New hire paperwork for Sarah Johnson
+Please review Q3 financial report and provide feedback
+Decision needed: Which vendor should we choose for the project?
+Response requested: Are you available for project kickoff meeting?
+Task assigned: Update website copy for product launch
+
+# MEETING CATEGORY (Medium Priority, High Confidence)
+Invitation: Weekly team standup - Monday 9am
+Meeting reminder: Quarterly review tomorrow at 2pm
+Calendar invite: Client presentation - Friday March 15
+Agenda for tomorrow's board meeting
+Reschedule request: Can we move our 1:1 to Thursday?
+Meeting confirmed: Product demo with ABC Corp next week
+Weekly all-hands this Thursday - new location
+
+# INFORMATION CATEGORY (Low Priority, High Confidence)
+Monthly newsletter: Industry trends and updates
+Weekly digest: Top articles in web development
+Company update: New office opening in Austin
+FYI: Server maintenance scheduled for this weekend
+Industry report: 2024 marketing automation trends
+News update: Competitor ABC just raised $50M Series B
+Read: New employee handbook effective January 1st
+
+# SPAM CATEGORY (Low Priority, High Confidence)
+Congratulations! You've won $1,000,000 lottery
+URGENT: Your PayPal account will be suspended (we're not PayPal customers)
+Nigerian prince wants to share inheritance with you
+Click here for instant weight loss miracle
+Free iPhone 15 - just pay shipping costs!
+Your computer has been infected - download our antivirus now
+Hot singles in your area want to meet you
+
+# PROMOTION CATEGORY (Low Priority, High Confidence)
+50% off all courses this weekend only - Udemy
+New features in Slack: AI-powered search and more
+Limited time: Free trial of our project management tool
+Adobe Creative Cloud - Special pricing for students
+Webinar invitation: Advanced Excel techniques for business
+Early bird pricing: Marketing conference ends Friday
+Your Spotify wrapped is ready! See your 2024 stats
+
+# PERSONAL CATEGORY (Low Priority, High Confidence)
+Happy birthday! Hope you have an amazing day
+Thanks for dinner last night - had such a great time
+Family photos from vacation - check them out!
+Book club meets Thursday - we're reading "Dune"
+Congrats on the promotion! You deserve it
+Can you pick up milk on your way home?
+Mom called - please call her back when you can
+
+# AMBIGUOUS/OTHER CATEGORY (Mixed Priority, Low/Medium Confidence)
+RE: RE: RE: That thing we discussed
+Fwd: Fwd: Important (no context provided)
+Follow up on our conversation
+Quick question about the project
+Thoughts?
+Can we chat?
+Update
+Status
+FW: Meeting notes (no meeting specified)
+RE: Your email (which email?)
+
+# EDGE CASES - Testing Classification Boundaries
+
+# Could be urgent OR action required
+ASAP: Need your input on client proposal due today
+
+# Could be meeting OR information  
+Save the date: Company retreat planning meeting next month
+
+# Could be promotion OR information
+Product update: New dashboard features now available
+
+# Could be personal OR meeting (from colleague who's also friend)
+Want to grab coffee and discuss the new project?
+
+# Could be spam OR legitimate (from unknown sender)
+Free consultation: Improve your business processes
+
+# Could be action required OR information
+Please note: New password policy effective immediately
+
+# Mixed signals - urgent language but low stakes
+URGENT: Please update your lunch preferences for catering
+
+# Professional but unclear category
+Following up on our discussion regarding next steps
+
+# Legitimate business but promotional tone
+Transform your productivity with our new workflow tool
+
+# High priority but unclear action
+CEO announcement: Important changes to company structure
+
+# Could be spam but from known domain
+Your Amazon order needs immediate attention (but wrong format)
+
+# Time-sensitive but unclear importance
+Reminder: Event registration closes tomorrow
+
+# Technical but unclear urgency
+System notification: Database migration completed successfully
+
+# Personal from professional contact
+Congrats on the new job! We should celebrate soon
+
+# Action required but timeline unclear
+Please provide feedback on new policy draft
