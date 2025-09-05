@@ -1,6 +1,17 @@
+---
+title: Email Classification - Structured Template
+type: structured
+category: classification|templates|advanced
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["developers", "analysts"]
+output_format: json|csv
+schema_version: "1.0"
+---
+
 [COMPAT HEADER — STRUCTURED OUTPUT (JSON)]
-• Output must be JSON only; first character must be {.
-• On failure, return only: {"error":"format_violation","note":"why"}.
+- Output must be JSON only; first character must be {.
+- On failure, return only: {"error":"format_violation","note":"why"}.
 [/COMPAT]
 
 # Email Classification - Structured Template
@@ -110,3 +121,13 @@ Expected: {"subject":"RE: That thing we discussed","category":"other","priority"
 
 Input: ""
 Expected: {"error":"empty_subject","note":"Subject line is required for classification"}
+
+### Complex Business Context
+
+Input: "URGENT: Board meeting moved to Friday - please confirm your Q4 numbers are ready for presentation to investors"
+Expected: {"subject":"URGENT: Board meeting moved to Friday - please confirm your Q4 numbers are ready for presentation to investors","category":"action_required","priority":"high","confidence":"high","suggested_action":"Prepare Q4 financial data for Friday board meeting","estimated_time":"2-4 hours","business_hours":true}
+
+### Mixed Category Signals
+
+Input: "Reminder: Team building event next week - please RSVP and submit your expense reports"
+Expected: {"subject":"Reminder: Team building event next week - please RSVP and submit your expense reports","category":"action_required","priority":"medium","confidence":"medium","suggested_action":"RSVP for event and submit expense reports","estimated_time":"15-30 minutes","business_hours":true}

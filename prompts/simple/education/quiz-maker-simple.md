@@ -1,3 +1,13 @@
+---
+title: Quiz and Test Creator
+type: simple
+category: education
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["non-technical", "business users"]
+output_format: document
+---
+
 # Quiz and Test Creator
 
 ## What this does:
@@ -42,7 +52,7 @@ Create a complete quiz that I can use directly with my students. Include varied 
 Format the quiz as:
 
 **[SUBJECT] QUIZ - [TOPIC]**
-**Name: ********\_******** Date: **\_\_\_****
+**Name: **\*\*\***\*\_**\*\*\*\*** Date: **\_\_\_\*\*\*\*
 **Instructions:** [Clear directions for students]
 **Time Limit:** [How long they have]
 **Total Points:** [Point value]

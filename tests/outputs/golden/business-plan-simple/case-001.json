@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "prompt": "business-plan-simple",
+    "version": "1.1.0",
+    "test_input": "business-idea-1.txt",
+    "last_updated": "2025-09-05",
+    "platform_tested": "ChatGPT 4",
+    "quality_score": "high",
+    "changes": "Removed emojis, added YAML frontmatter"
+  },
+  "output": {
+    "section": "Executive Summary",
+    "content": "NutriFlow transforms meal planning for time-constrained professionals through AI-driven personalization and automated grocery integration. Our platform analyzes dietary preferences, health goals, and schedule constraints to generate customized meal plans with one-click grocery ordering.\n\nThe target market consists of urban professionals aged 25-45 working in demanding careers. This demographic spends significant amounts on food but struggles with nutrition consistency due to time constraints and decision fatigue.\n\nKey Competitive Advantages:\n- AI-powered meal personalization based on dietary preferences\n- Integration with major grocery delivery services\n- Time-optimized recipe recommendations for quick preparation\n- Nutritional tracking aligned with health objectives\n- Smart inventory management reducing food waste\n\nWe project reaching active users within 18 months, generating revenue by year two through subscription model.",
+    "word_count": 156,
+    "includes_metrics": true,
+    "professional_tone": true,
+    "actionable_content": true
+  }
+}

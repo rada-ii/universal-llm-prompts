@@ -1,0 +1,16 @@
+Input validation test case:
+
+User provides job posting with incomplete information:
+"Python Developer position
+Good salary
+Experience required  
+Apply today"
+
+Expected behavior: System should identify missing required fields (company name, location, specific salary range, experience level details) and return structured error response with helpful guidance.
+
+Test malformed data:
+- Empty input
+- Input with special characters: "Senior Python Developer @#$% Company"
+- Input with inconsistent formatting
+- Input mixing languages: "Python Developer presso Tech Company"
+- Input with unclear salary: "Competitive compensation package"

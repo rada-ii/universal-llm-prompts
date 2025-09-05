@@ -1,0 +1,51 @@
+Document Type: Software as a Service (SaaS) Agreement
+Parties: TechFlow Solutions (our company) and DataSync Enterprise Software
+Purpose: Annual renewal of customer relationship management (CRM) platform
+Contract Value: $48,000 annually (up from $42,000 last year)
+Review Deadline: January 20, 2025 (must respond within 10 days)
+
+Business Context:
+- Current CRM serves 150 employees across 4 departments
+- Critical for sales operations, customer service, marketing automation
+- Integration with existing accounting and inventory systems
+- 2-year relationship with vendor, generally satisfied with service
+- Budget approved for up to $50,000 annually
+
+Company Priorities:
+- Cost control due to economic uncertainty
+- Data security and GDPR compliance essential
+- Flexibility to scale up/down based on business needs
+- Reliable uptime for customer-facing operations
+- Clear exit strategy if switching vendors becomes necessary
+
+Key Contract Terms to Review:
+- Annual fee increase from $42,000 to $48,000 (14.3% increase)
+- Automatic renewal clause with 90-day cancellation notice
+- Service level agreement: 99.5% uptime guarantee
+- Data backup and recovery procedures
+- Integration support and API access rights
+- Training and technical support included
+
+Current Concerns:
+- Price increase exceeds budgeted 8% inflation adjustment
+- Competitor (SalesForce) offering similar service for $40,000
+- Recent service outages lasted 4 hours in November 2024
+- Contract language around data ownership unclear
+- Termination clause requires 6-month data transition period
+
+Risk Tolerance: Low - prefer conservative terms that protect our business
+Decision Authority: CFO approval required for contracts over $25,000
+Alternative Options: Considering SalesForce, HubSpot, or custom solution
+
+Document Sections Needing Analysis:
+1. Pricing and payment terms (Section 3)
+2. Service level agreements and penalties (Section 5)  
+3. Data ownership and portability rights (Section 7)
+4. Liability and indemnification clauses (Section 9)
+5. Termination and transition procedures (Section 11)
+6. Intellectual property and customization rights (Section 12)
+
+Previous Issues:
+- Last year's contract had unclear data backup responsibilities
+- Vendor charged extra $3,000 for integration support not included in base price
+- Customer support response time exceeded promised 4-hour window multiple times

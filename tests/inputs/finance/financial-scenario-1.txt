@@ -1,0 +1,65 @@
+Analysis Purpose: Evaluate acquisition opportunity for regional competitor
+Company: TechFlow Solutions (acquirer) considering purchase of DataWorks Inc.
+Decision Timeline: 60 days for due diligence and final decision
+Investment Committee: CEO, CFO, Board requires detailed financial analysis
+
+Target Company (DataWorks Inc.):
+- Annual revenue: $1.8 million (growing 12% annually for 3 years)
+- Location: Same metro area, complementary customer base
+- Employees: 15 full-time (8 technical, 4 sales, 3 admin)
+- Business model: Custom software development for small businesses
+- Client base: 85 active clients, average contract $21,000 annually
+
+Asking Price: $2.4 million
+- Includes all assets, customer contracts, intellectual property
+- Owner retiring, motivated seller but not desperate
+- Financing: $1.5M bank loan (approved), $900K cash from operations
+- No assumed debt, clean balance sheet transfer
+
+TechFlow Solutions (Acquiring Company):
+- Current annual revenue: $4.2 million
+- Net profit margin: 18% (above industry average of 15%)
+- Cash reserves: $1.2 million available for acquisitions
+- Growth goal: 25% annual revenue increase through acquisition
+- Integration capacity: Can absorb 15 employees within 6 months
+
+Financial Data Available:
+- DataWorks 3-year revenue trend: $1.4M → $1.6M → $1.8M
+- Gross margin: 65% (consistent across all years)
+- Operating expenses: $950K annually (53% of revenue)
+- Net profit: $220K annually (12% net margin)
+- Customer retention rate: 92% (excellent for industry)
+- Average project margin: 40% after direct costs
+
+Market Analysis:
+- Local market growing 8% annually
+- Combined company would be #2 player in region
+- Synergy opportunities: cross-selling, operational efficiency
+- Competition: 3 larger firms, 12 smaller competitors
+- Economic outlook: Stable, slight recession risk in 18 months
+
+Integration Projections:
+- Year 1: Maintain separate operations, achieve 5% cost savings
+- Year 2: Full integration, projected 15% revenue synergy from cross-selling
+- Year 3: Combined entity targeting $7.5M revenue (25% above standalone growth)
+- Retention assumption: 90% of DataWorks clients, 95% of key employees
+
+Success Criteria:
+- ROI target: Minimum 20% by year 3
+- Payback period: Maximum 4 years
+- Revenue synergy: At least 10% from cross-selling
+- Cost synergy: 8% reduction in combined operational costs
+- Client retention: Maintain 85%+ of existing customer base
+
+Risk Factors:
+- Key employee departure (owner staying 6 months transition)
+- Customer concentration: Top 5 clients represent 35% of revenue
+- Technology integration challenges between systems
+- Market downturn affecting small business clients
+- Competitive response from larger regional players
+
+Financial Constraints:
+- Maximum debt-to-equity ratio: 2:1 after acquisition
+- Maintain 6 months cash reserves for operations
+- Interest rate: 7.5% on acquisition loan
+- Integration costs: Estimated $150K in first year

@@ -1,3 +1,13 @@
+---
+title: Social Media Content Planner
+type: simple
+category: creative
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["non-technical", "business users"]
+output_format: document
+---
+
 # Social Media Content Planner
 
 ## What this does:
@@ -82,10 +92,12 @@ Format the plan as:
 
 **HASHTAG STRATEGY:**
 
-- **Primary hashtags (use every post):** [5-7 core hashtags]
-- **Secondary hashtags (rotate):** [10-15 relevant hashtags]
-- **Local hashtags:** [Location-based hashtags]
-- **Trending hashtags to watch:** [Current popular tags in your niche]
+**HASHTAG STRATEGY:**
+
+- **Core hashtags (use always):** [3-5 brand-specific hashtags]
+- **Content hashtags (rotate):** [5-8 topic-specific hashtags]
+- **Local hashtags:** [City/region hashtags for local reach]
+- **Community hashtags:** [Industry/niche community tags]
 
 **ENGAGEMENT TACTICS:**
 

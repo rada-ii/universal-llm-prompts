@@ -1,3 +1,13 @@
+---
+title: Meeting Notes Summarizer
+type: simple
+category: productivity
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["non-technical", "business users"]
+output_format: document
+---
+
 # Meeting Notes Summarizer
 
 ## What this does:

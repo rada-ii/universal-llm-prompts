@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "prompt": "content-summarizer-role",
+    "version": "1.0.0",
+    "test_input": "long-article-1.txt",
+    "last_updated": "2025-09-05",
+    "platform_tested": "ChatGPT 4",
+    "quality_score": "high"
+  },
+  "output": {
+    "title": "Remote Work Global Impact",
+    "summary_points": [
+      "Pandemic accelerated remote work with mixed productivity results across companies",
+      "Employee satisfaction increased but isolation challenges require structured support",
+      "Economic impacts include reduced commercial real estate and increased residential demand",
+      "Hybrid models emerge as sustainable solution combining flexibility with collaboration",
+      "Future requires technology investment and management training for success"
+    ]
+  }
+}

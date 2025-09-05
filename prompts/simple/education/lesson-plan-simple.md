@@ -1,3 +1,13 @@
+---
+title: Lesson Plan Creator
+type: simple
+category: education
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["non-technical", "business users"]
+output_format: document
+---
+
 # Lesson Plan Creator
 
 ## What this does:
@@ -23,11 +33,11 @@ Create a complete, detailed lesson plan that I can use directly in my classroom.
 - Duration: [CLASS TIME - example: "60 minutes"]
 - Special notes: [ANYTHING IMPORTANT - example: "Mixed ability class, some students struggle with division"]
 
-**Available resources:**
+**Resources:**
 
-- Materials I have: [LIST WHAT'S AVAILABLE - example: "Whiteboard, fraction manipulatives, worksheets"]
-- Technology available: [TECH TOOLS - example: "Interactive projector, tablets"]
-- Class size: [NUMBER OF STUDENTS - example: "22 students"]
+- Materials: [WHAT YOU HAVE - example: "Fraction bars, pizza models, worksheets"]
+- Technology: [AVAILABLE TECH - example: "Interactive whiteboard"]
+- Students: [CLASS SIZE - example: "22 students, mixed ability levels"]
 
 Format the lesson plan with:
 

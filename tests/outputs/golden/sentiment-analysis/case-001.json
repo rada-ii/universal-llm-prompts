@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "prompt": "sentiment-analysis-structured",
+    "version": "1.1.0",
+    "test_input": "positive-review-example.txt",
+    "last_updated": "2025-09-05",
+    "platform_tested": "Claude 3",
+    "quality_score": "high",
+    "changes": "Updated filename to match standardized naming"
+  },
+  "output": {
+    "text": "Absolutely love this product! Best purchase I've made this year. Customer service was incredible too.",
+    "sentiment": "positive",
+    "confidence": "high",
+    "word_count": 16,
+    "language_detected": "english"
+  }
+}

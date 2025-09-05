@@ -1,260 +1,191 @@
 # Contributing to Universal LLM Prompts
 
-Thank you for your interest in contributing! This guide will help you create high-quality prompts that benefit the entire community.
-
 ## Quick Contribution Checklist
 
 Before submitting a prompt:
 
-- [ ] Tested on at least 2 different AI platforms (ChatGPT, Claude, etc.)
-- [ ] Follows our standard format (see templates below)
+- [ ] Tested on ChatGPT 4 and Claude 3
+- [ ] Follows standard format (see templates)
 - [ ] Includes realistic test input and expected output
-- [ ] Uses clear, jargon-free language
-- [ ] Solves a real-world problem
+- [ ] Uses clear, non-technical language
+- [ ] Solves real-world problem
 
 ## Types of Contributions
 
-### 1. New Simple Prompts
+### Simple Prompts
 
-**Best for:** Creating documents, plans, content that humans will read
+**For**: Documents humans read (business plans, emails, lesson plans)
 
-**Requirements:**
+**Requirements**:
 
 - Clear "What this does" section
-- Step-by-step "How to use" instructions
-- Complete prompt with placeholder examples
-- Real example of expected output
-- Tips for success
+- Step-by-step instructions
+- Complete prompt with examples
+- Expected output sample
+- Success tips
 
-### 2. New Structured Prompts
+### Structured Prompts
 
-**Best for:** Extracting data, JSON/CSV outputs for automation
+**For**: Data extraction and automation (JSON/CSV outputs)
 
-**Requirements:**
+**Requirements**:
 
-- Valid JSON/CSV schema definition
-- Error handling for malformed inputs
-- Compatibility headers for different platforms
-- Confidence scoring where applicable
-- Test cases covering edge cases
+- Valid JSON/CSV schema
+- Error handling for bad inputs
+- Compatibility headers
+- Confidence scoring
+- Edge case handling
 
-### 3. Improvements to Existing Prompts
+## Standard Templates
 
-- Better examples or instructions
-- Fixed bugs or compatibility issues
-- Additional use cases or variations
-- Performance optimizations
-
-## Standard Format Templates
-
-### Simple Prompt Template
+### Simple Prompt Format
 
 ```markdown
 # [Tool Name] Creator
 
 ## What this does:
 
-[1-2 sentences explaining what this prompt creates and who should use it]
+[1-2 sentences explaining purpose and target user]
 
 ## How to use:
 
 1. Copy this entire prompt
-2. [Specific step about filling in details]
-3. Paste into any AI assistant and get your [output type]
+2. Replace [bracketed sections] with your details
+3. Paste into any AI assistant
 
 ## The Prompt:
 
-[Complete prompt with clear placeholders in brackets]
+[Complete prompt with clear placeholders]
 
 ## Example Result:
 
-[Realistic example of what the AI will produce]
+[Realistic example output]
 
 ## Tips for Success:
 
-1. **[Tip category]** - [Specific advice]
-2. **[Tip category]** - [Specific advice]
-3. **[Tip category]** - [Specific advice]
-
-## Common Use Cases:
-
-- **[Use case]** - [When to use this variation]
-- **[Use case]** - [When to use this variation]
+1. **Be specific** - Include details about your situation
+2. **Provide context** - Explain who will use the output
+3. **Set constraints** - Mention budget, timeline, limitations
 ```
 
-### Structured Prompt Template
+### Structured Prompt Format
 
 ```markdown
-[COMPAT HEADER — STRUCTURED OUTPUT (JSON/CSV)]
-• Output must be [format] only; first character must be [requirement].
-• On failure, return only: [error format].
+[COMPAT HEADER — STRUCTURED OUTPUT (JSON)]
+• Output must be JSON only; first character must be {.
+• On failure, return only: {"error":"format_violation","note":"why"}.
 [/COMPAT]
 
 # [Tool Name] - Structured Template
 
 ## Purpose
 
-[Brief explanation of what data this extracts or processes]
+[Brief explanation of data extraction/processing]
 
 ## Template
 
-<s>[Format] only, no extra text.</s>
-<schema>[Complete schema definition]</schema>
-<rules>
-[Processing rules and validation criteria]
-</rules>
-<task>[What to do with the input]</task>
+<s>JSON only, no extra text.</s>
+<schema>[Complete JSON schema]</schema>
+<examples>[3-5 realistic examples]</examples>
+<task>[Processing instructions]</task>
 <input>{{INPUT_VARIABLE}}</input>
-
-## Test Cases
-
-### [Test Case Name]
-
-Input: [Example input]
-Expected: [Expected JSON/CSV output]
 ```
 
 ## Testing Requirements
 
 ### Before Submitting
 
-1. **Test on Multiple Platforms**
+1. **Test on multiple platforms**
 
    - ChatGPT 4 (required)
    - Claude 3 (required)
-   - Gemini Pro (recommended)
-   - Note any platform-specific issues
+   - Note platform differences
 
-2. **Create Test Files**
+2. **Create test files**
 
    - Add realistic input to `tests/inputs/[category]/`
    - Save expected output to `tests/outputs/[category]/`
-   - Include edge cases and error scenarios
 
-3. **Validate Output Quality**
-   - Can a non-technical person use this successfully?
-   - Does it solve a real problem?
-   - Is the output immediately usable?
-
-### Testing Checklist
-
-- [ ] Prompt works without modification on ChatGPT 4
-- [ ] Prompt works without modification on Claude 3
-- [ ] Output format is consistent across platforms
-- [ ] Instructions are clear to non-technical users
-- [ ] Example output matches what users actually get
-- [ ] Error cases are handled gracefully (for structured prompts)
+3. **Validate quality**
+   - Non-technical users can follow instructions
+   - Output is immediately usable
+   - Handles edge cases gracefully
 
 ## File Organization
 
-### Naming Conventions
+### Naming Convention
 
 - Simple prompts: `[tool-name]-simple.md`
 - Structured prompts: `[tool-name]-structured.md`
 - Test inputs: `[descriptive-name].txt`
-- Use lowercase with hyphens, no spaces
+- Use lowercase with hyphens
 
 ### Folder Structure
 
 ```
 prompts/
-├── simple/
-│   └── [category]/
-│       └── [tool-name]-simple.md
-└── structured/
-    └── [category]/
-        └── [tool-name]-structured.md
+├── simple/[category]/[tool-name]-simple.md
+└── structured/[category]/[tool-name]-structured.md
 
 tests/
-├── inputs/
-│   └── [category]/
-│       └── [test-case].txt
-└── outputs/
-    └── [category]/
-        └── [expected-result].[json|csv|md]
+├── inputs/[category]/[test-case].txt
+└── outputs/[category]/[expected-result].[json|csv|md]
 ```
 
 ## Quality Standards
 
 ### Writing Style
 
-- **Clear and conversational** - Write like you're helping a friend
-- **Specific examples** - Use realistic scenarios, not generic placeholders
-- **Action-oriented** - Focus on what users will accomplish
-- **Inclusive language** - Avoid assumptions about gender, culture, or background
+- **Clear and conversational** - No jargon
+- **Specific examples** - Real scenarios, not generic placeholders
+- **Action-oriented** - Focus on results users achieve
+- **Inclusive language** - No assumptions about background
 
 ### Technical Standards
 
-- **Cross-platform compatibility** - Test on multiple AI services
-- **Error resilience** - Handle malformed inputs gracefully
-- **Consistent formatting** - Follow established patterns
-- **Validation** - Ensure outputs can be parsed/used as intended
+- **Cross-platform compatibility** - Works on ChatGPT, Claude, Gemini
+- **Error resilience** - Handles malformed inputs
+- **Consistent formatting** - Follows established patterns
+- **Validation** - Outputs are parseable and usable
 
-## Contribution Process
+## Submission Process
 
-### Step 1: Plan Your Contribution
-
-1. Check existing prompts to avoid duplication
-2. Identify the specific problem your prompt solves
-3. Choose simple vs. structured based on output needs
-4. Research similar tools to ensure yours adds unique value
-
-### Step 2: Create Your Prompt
-
-1. Follow the appropriate template exactly
-2. Write clear, tested instructions
-3. Create realistic examples
-4. Test thoroughly on multiple platforms
-
-### Step 3: Submit for Review
-
-1. Fork the repository
-2. Create a new branch: `add-[prompt-name]`
-3. Add your prompt and test files
-4. Submit a pull request with:
-   - Clear description of what the prompt does
+1. **Fork repository**
+2. **Create branch**: `add-[prompt-name]`
+3. **Add prompt and test files**
+4. **Submit pull request** with:
+   - Clear description of prompt purpose
    - Testing results from different platforms
    - Example use cases
 
-### Step 4: Respond to Feedback
+## What Makes Good Contributions
 
-- Address reviewer comments promptly
-- Make requested changes
-- Update tests if needed
-- Collaborate to ensure quality
+### Excellent Prompts
 
-## What Makes a Great Contribution
-
-### Excellent Prompts:
-
-- Solve real problems that people face regularly
-- Work consistently across different AI platforms
+- Solve real problems people face regularly
+- Work consistently across AI platforms
 - Produce immediately usable results
-- Include helpful examples and tips
-- Are well-tested with realistic inputs
+- Include helpful examples and context
 
-### Avoid:
+### Avoid
 
-- Prompts that require technical knowledge to use
-- Outputs that need significant editing to be useful
+- Prompts requiring technical knowledge
+- Outputs needing significant editing
 - Overly complex instructions
-- Generic examples that don't represent real use
-- Prompts that work on only one AI platform
+- Platform-specific solutions
 
 ## Recognition
 
-Contributors who submit high-quality prompts will be:
+Quality contributors receive:
 
-- Listed in the CONTRIBUTORS.md file
-- Credited in the prompt file comments
-- Invited to help review future contributions
-- Given priority for feature requests
+- Credit in prompt file headers
+- Invitation to review future contributions
+- Priority for feature requests
 
-## Questions?
+## Getting Help
 
 - Check existing issues for similar questions
-- Create a new issue for bugs or feature requests
-- Start a discussion for general questions
-- Email [maintainer] for private questions
+- Create new issue for bugs or features
+- Email maintainer for private questions
 
-Thank you for helping make AI more accessible and useful for everyone!
+Focus on creating prompts that solve real problems with minimal user effort.

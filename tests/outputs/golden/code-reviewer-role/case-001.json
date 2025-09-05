@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "prompt": "code-reviewer-role",
+    "version": "1.0.0",
+    "test_input": "code-sample-python-1.txt",
+    "last_updated": "2025-09-05",
+    "platform_tested": "Claude 3",
+    "quality_score": "high"
+  },
+  "output": {
+    "review_type": "security_focused",
+    "critical_issues": 4,
+    "suggestions": [
+      {
+        "issue": "Password stored in plain text",
+        "old": "if user['password'] == password:",
+        "new": "if bcrypt.checkpw(password.encode(), user['password_hash']):",
+        "risk": "Critical - passwords exposed in database"
+      },
+      {
+        "issue": "SQL injection vulnerability",
+        "old": "f\"SELECT * FROM users WHERE id = {user_id}\"",
+        "new": "\"SELECT * FROM users WHERE id = %s\", (user_id,)",
+        "risk": "Database compromise through injection"
+      },
+      {
+        "issue": "Unsafe file operations",
+        "old": "with open(file_path, 'r') as f:",
+        "new": "with open(os.path.basename(file_path), 'r') as f:",
+        "risk": "Path traversal vulnerability"
+      }
+    ]
+  }
+}

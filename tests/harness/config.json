@@ -61,6 +61,21 @@
   "quality_standards": {
     "min_test_cases": 3,
     "required_platforms": ["chatgpt_4", "claude_3"],
-    "max_response_time": "30_seconds"
+    "max_re,sponse_time": "30_seconds"
+  },
+  "advanced": {
+    "prompt_file": "prompts/structured/advanced/chain-of-thought-structured.md",
+    "input_folder": "tests/inputs/advanced/",
+    "expected_format": "JSON"
+  },
+  "system_roles": {
+    "prompt_file": "prompts/structured/system-roles/code-reviewer-role.md",
+    "input_folder": "tests/inputs/system-roles/",
+    "expected_format": "TEXT"
+  },
+  "templates": {
+    "prompt_file": "prompts/templates/error-handling-template.md",
+    "input_folder": "tests/inputs/templates/",
+    "expected_format": "JSON"
   }
 }

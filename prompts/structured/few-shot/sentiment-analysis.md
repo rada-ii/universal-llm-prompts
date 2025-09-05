@@ -1,7 +1,19 @@
+---
+title: Sentiment Analysis - Structured Template
+type: structured
+category: classification|templates|advanced
+last_updated: 2025-09-05
+tested_platforms: ["ChatGPT 4", "Claude 3"]
+target_users: ["developers", "analysts"]
+output_format: json|csv
+schema_version: "1.0"
+---
+
 [COMPAT HEADER — STRUCTURED OUTPUT (JSON)]
-• Output must be JSON only; first character must be {.
-• On failure, return only: {"error":"format_violation","note":"why"}.
-[/COMPAT]
+
+- Output must be JSON only; first character must be {.
+- On failure, return only: {"error":"format_violation","note":"why"}.
+  [/COMPAT]
 
 # Sentiment Analysis - Structured Template
 
@@ -19,8 +31,8 @@ Classify text sentiment with confidence scoring and error handling for automated
 {"text":"Terrible service, very disappointed.","sentiment":"negative","confidence":"high","word_count":5,"language_detected":"english"}
 {"text":"","sentiment":"neutral","confidence":"low","word_count":0,"language_detected":null}
 {"text":"Hmm, maybe... we'll see I guess...","sentiment":"neutral","confidence":"low","word_count":6,"language_detected":"english"}
-{"text":"ABSOLUTELY FANTASTIC!!!","sentiment":"positive","confidence":"high","word_count":2,"language_detected":"english"}
-{"text":"This is THE WORST thing ever!!!","sentiment":"negative","confidence":"high","word_count":6,"language_detected":"english"}
+{"text":"ABSOLUTELY FANTASTIC!","sentiment":"positive","confidence":"high","word_count":2,"language_detected":"english"}
+{"text":"This is THE WORST thing ever!","sentiment":"negative","confidence":"high","word_count":6,"language_detected":"english"}
 {"text":"Good product but terrible customer service","sentiment":"neutral","confidence":"medium","word_count":7,"language_detected":"english"}
 </examples>
 <confidence_criteria>
@@ -77,8 +89,8 @@ Expected: {"text":"","sentiment":"neutral","confidence":"low","word_count":0,"la
 
 ### Strong Positive with Caps
 
-Input: "OMG BEST THING EVER!!! LOVE IT!!!"
-Expected: {"text":"OMG BEST THING EVER!!! LOVE IT!!!","sentiment":"positive","confidence":"high","word_count":7,"language_detected":"english"}
+Input: "OMG BEST THING EVER! LOVE IT!"
+Expected: {"text":"OMG BEST THING EVER! LOVE IT!","sentiment":"positive","confidence":"high","word_count":6,"language_detected":"english"}
 
 ### Sarcastic/Complex
 

@@ -1,0 +1,23 @@
+Problem context: Small marketing agency needs to decide whether to hire full-time developer or use freelancers for new client app project
+
+Available options:
+1. Hire full-time Python developer - $80,000 salary + benefits
+2. Contract freelance development team - $60,000 project cost
+3. Partner with development agency - $75,000 + ongoing maintenance
+
+Constraints:
+- Project deadline: 4 months
+- Budget limit: $85,000 first year
+- Team has no technical expertise
+- Client expects high quality and ongoing support
+
+Success criteria:
+- Delivered on time and budget
+- Maintainable codebase
+- Team can support post-launch
+- Relationship sustainable long-term
+
+Stakeholders:
+- Agency owner (cost-conscious, risk-averse)
+- Project manager (quality-focused, timeline-driven)
+- Client (results-oriented, tech-savvy)

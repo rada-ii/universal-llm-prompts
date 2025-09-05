@@ -1,5 +1,38 @@
-XYZ Corp seeks programmer
-Location: flexible
-Salary: depends on experience  
-Tech: modern stack
-Apply soon
+Frontend Developer Position at InnovateTech Solutions
+Location: Austin, TX (Hybrid - 3 days in office, 2 remote)
+Salary Range: $75,000 - $95,000 annually + comprehensive benefits package
+Experience Required: 3-5 years in frontend development
+
+Key Responsibilities:
+- Develop responsive web applications using React and TypeScript
+- Collaborate with UX/UI designers to implement pixel-perfect designs
+- Optimize applications for maximum speed and scalability
+- Participate in code reviews and maintain coding standards
+- Work with REST APIs and GraphQL for data integration
+
+Required Skills:
+- Proficiency in React, JavaScript/TypeScript, HTML5, CSS3
+- Experience with modern build tools (Webpack, Vite)
+- Knowledge of state management (Redux, Context API)
+- Familiarity with testing frameworks (Jest, React Testing Library)
+- Understanding of responsive design and cross-browser compatibility
+
+Preferred Qualifications:
+- Bachelor's degree in Computer Science or related field
+- Experience with Next.js or similar React frameworks
+- Knowledge of CSS preprocessors (Sass, Less)
+- Familiarity with CI/CD pipelines
+- Previous experience in agile development environments
+
+Benefits:
+- Health, dental, and vision insurance
+- 401(k) with company matching
+- Flexible PTO policy
+- Professional development budget ($2,000 annually)
+- Remote work stipend for home office setup
+
+Application Process:
+Please submit your resume, portfolio, and a brief cover letter explaining your interest in this position. Applications will be reviewed on a rolling basis.
+
+Apply by: January 31, 2025
+Contact: hiring@innovatetech.com

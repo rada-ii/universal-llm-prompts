@@ -1,372 +1,145 @@
 # Troubleshooting Guide
 
-Having issues with prompts? This guide covers common problems and solutions.
+## Quick Fixes
 
-## Quick Fixes for Common Problems
+### AI adds extra text to JSON output
 
-### AI adds extra text before/after JSON output
-
-**Problem:** Getting explanations or formatting instead of clean JSON/CSV
+**Problem**: Getting explanations instead of clean JSON/CSV
 
 ```
-Here's the analysis you requested:
+Here's the analysis:
 {"title": "Developer", "company": "TechCorp"...}
 Hope this helps!
 ```
 
-**Solutions:**
+**Solutions**:
 
-1. **Use structured prompts only** - Don't use simple prompts for data extraction
-2. **Set temperature to 0.1** - Higher temperatures cause creative additions
-3. **Copy the entire prompt** - Don't modify or shorten structured prompts
-4. **Try different AI platform** - Claude is often better for pure JSON output
+1. Use structured prompts only for data extraction
+2. Set temperature to 0.1
+3. Copy entire prompt without modifications
+4. Try Claude for better JSON consistency
 
-**Platform-specific fixes:**
+### Output too generic
 
-- **ChatGPT:** Add "Output only the JSON, no additional text" to end of prompt
-- **Gemini:** Often adds explanations; try Claude or ChatGPT instead
-- **Claude:** Usually good with structured output by default
+**Problem**: Getting textbook answers instead of practical advice
 
----
+**Solutions**:
 
-### Output doesn't match needs exactly
-
-**Problem:** Getting generic or irrelevant results
-
-**Solutions:**
-
-1. **Add specific examples:**
+1. Add specific constraints:
 
    ```
    Instead of: "Write a business plan"
-   Try: "Write a business plan for a mobile app that connects dog owners
-   with pet sitters, targeting urban professionals who travel for work"
+   Try: "Write a business plan for mobile app connecting dog owners
+   with pet sitters, targeting urban professionals, $50K budget"
    ```
 
-2. **Include context about your audience:**
+2. Include your situation:
 
    ```
-   "Create this for busy executives who need quick, actionable insights"
+   "We currently use spreadsheets, have 10 employees, $500/month budget"
    ```
 
-3. **Specify the format you want:**
-
+3. Request specific examples:
    ```
-   "Format as an email I can send directly to my team"
+   "Include 3 tools I can implement this week"
    ```
-
-4. **Give examples of what good looks like:**
-   ```
-   "Similar to how Airbnb connects hosts with travelers, but for pet care"
-   ```
-
----
 
 ### Inconsistent results across platforms
 
-**Problem:** Same prompt gives different quality results on different platforms
+**Platform strengths**:
 
-**Platform Strengths:**
+- **ChatGPT 4**: Business documents, consistent formatting
+- **Claude 3**: Long documents, structured data, analysis
+- **Gemini Pro**: Creative content (sometimes verbose)
 
-- **ChatGPT 4:** Best for business documents, consistent formatting
-- **Claude 3:** Excellent for long documents, analysis, and structured data
-- **Gemini Pro:** Good for creative content, sometimes verbose
-- **GPT-3.5:** Budget option, may need prompt adjustments
+**Solutions**:
 
-**Solutions:**
-
-1. **Use compatibility headers** - Our structured prompts include these
-2. **Adjust for platform quirks:**
-   - ChatGPT: More direct instructions work better
-   - Claude: Longer, detailed prompts are fine
-   - Gemini: Shorter, focused prompts reduce verbosity
-
----
+1. Use compatibility headers (included in structured prompts)
+2. Adjust for platform:
+   - ChatGPT: Direct instructions
+   - Claude: Detailed prompts work well
+   - Gemini: Shorter, focused prompts
 
 ### Not sure which prompt to use
 
-**Decision Tree:**
+**Decision tree**:
 
-**Want a document humans will read?** → Use Simple Prompts
+- **Want document humans read?** → Simple prompts
+- **Want data for spreadsheets?** → Structured prompts
+- **Need brainstorming?** → Simple prompts
+- **Processing lots of data?** → Structured prompts
 
-- Business plans, lesson plans, emails, presentations
+**Check examples**: Browse `tests/inputs/` for similar scenarios
 
-**Want data for spreadsheets/automation?** → Use Structured Prompts
+### Prompts too slow or hit limits
 
-- Extract job info, classify content, analyze sentiment
+**Solutions**:
 
-**Need inspiration or brainstorming?** → Use Simple Prompts with creative focus
-
-- Blog outlines, social media content, marketing ideas
-
-**Processing lots of data?** → Use Structured Prompts
-
-- Survey analysis, content classification, data extraction
-
-**Check our examples:**
-
-- Browse `tests/inputs/` for scenarios similar to yours
-- Look at `EXAMPLES.md` for real outputs
-- Try the closest match and adjust from there
-
----
-
-### Prompts are too slow or hit token limits
-
-**Problem:** AI stops mid-response or takes too long
-
-**Solutions:**
-
-1. **Break large tasks into smaller parts:**
-
+1. Break large tasks into smaller parts
+2. Focus requests:
    ```
-   Instead of: "Analyze this 50-page document"
-   Try: "Analyze pages 1-10 of this document, focusing on key findings"
+   Instead of: "Analyze 50-page document"
+   Try: "Analyze pages 1-10, focus on key findings"
    ```
+3. Use structured prompts for data tasks (more efficient)
 
-2. **Use more focused prompts:**
+## Platform-Specific Issues
 
-   ```
-   Instead of: "Create a complete marketing strategy"
-   Try: "Create a social media plan for the next 30 days"
-   ```
+### ChatGPT Problems
 
-3. **Prioritize your requests:**
+- **Stops mid-response**: Ask "Continue" or break task smaller
+- **Adds explanations to data**: End prompt with "Return only JSON"
+- **Inconsistent format**: Use specific examples in prompt
 
-   ```
-   "Focus on the 3 most important recommendations"
-   ```
+### Claude Problems
 
-4. **Use structured prompts for data tasks** - They're more efficient
+- **Too verbose**: Add "Keep it concise" or use ChatGPT
+- **Refuses requests**: Be more specific about business context
 
----
+### Gemini Problems
 
-### Results are too generic or obvious
+- **Adds commentary to data**: Use Claude or ChatGPT for pure data
+- **Ignores format**: Repeat format requirements at prompt end
 
-**Problem:** Getting textbook answers instead of practical advice
+## Technical Issues
 
-**Solutions:**
+### JSON validation errors
 
-1. **Add your specific constraints:**
+1. Use online JSON validator to find syntax errors
+2. Check temperature settings (use 0.1 for structured)
+3. Try different platform
+4. Ensure using exact prompt text
 
-   ```
-   "Budget limited to $500/month, team of 2 people, B2B SaaS company"
-   ```
+### Missing test files
 
-2. **Request specific examples:**
+1. Check file path: `tests/inputs/[category]/[name].txt`
+2. Verify file naming follows convention
+3. Ensure file is readable UTF-8 text
 
-   ```
-   "Include 3 specific tools or tactics I can implement this week"
-   ```
+### Structured prompts not working
 
-3. **Ask for personalization:**
+**Checklist**:
 
-   ```
-   "Tailor this for a freelance graphic designer working with small businesses"
-   ```
+- [ ] Using exact prompt text (don't modify structured prompts)
+- [ ] Set temperature to 0.1
+- [ ] Testing on ChatGPT 4 or Claude 3
+- [ ] Input data in expected format
 
-4. **Include your current situation:**
-   ```
-   "We're currently using spreadsheets and email, have 10 employees"
-   ```
+## Getting Better Results
 
----
+### For Simple Prompts
 
-### Technical prompts aren't working
-
-**Problem:** Structured prompts returning errors or malformed data
-
-**Checklist:**
-
-- [ ] Using the exact prompt text (don't modify structured prompts)
-- [ ] Set AI temperature to 0.1 or 0.2
-- [ ] Copied entire prompt including compatibility headers
-- [ ] Input data is in expected format
-- [ ] Testing on ChatGPT 4 or Claude 3 (more reliable than others)
-
-**Common fixes:**
-
-1. **JSON validation errors:** Use an online JSON validator to check output
-2. **CSV formatting issues:** Check for commas in data fields
-3. **Missing fields:** Some platforms skip fields - specify "include all fields"
-4. **Wrong data types:** Add type validation to your prompt
-
----
-
-## Platform-Specific Troubleshooting
-
-### ChatGPT Issues
-
-**Problem:** Stops mid-response
-**Fix:** Ask "Continue" or break task into smaller parts
-
-**Problem:** Adds explanations to structured output
-**Fix:** End prompt with "Return only the [format], no additional text"
-
-**Problem:** Inconsistent formatting
-**Fix:** Use specific examples in your prompt
-
-### Claude Issues
-
-**Problem:** Too verbose for simple tasks
-**Fix:** Add "Keep it concise" or use ChatGPT for shorter outputs
-
-**Problem:** Occasionally refuses reasonable requests
-**Fix:** Rephrase to be more specific about business context
-
-### Gemini Issues
-
-**Problem:** Adds commentary to data outputs
-**Fix:** Use Claude or ChatGPT for pure data extraction
-
-**Problem:** Sometimes ignores format requirements
-**Fix:** Repeat format requirements at end of prompt
-
-## Advanced Troubleshooting
-
-### When Multiple Platforms Fail
-
-1. **Check your input data:**
-
-   - Is it clear and well-formatted?
-   - Does it contain the information the prompt expects?
-   - Try with our test inputs first
-
-2. **Simplify your request:**
-
-   - Remove optional elements
-   - Focus on core functionality
-   - Test with minimal example
-
-3. **Check prompt compatibility:**
-   - Are you mixing simple and structured prompt elements?
-   - Did you modify a working prompt?
-   - Try the original version first
-
-### Performance Optimization
-
-**For faster results:**
-
-- Use shorter, more focused prompts
-- Provide clear examples of desired output
-- Avoid asking for multiple formats in one request
-
-**For better quality:**
-
-- Include specific context about your situation
-- Give examples of good vs. bad outputs
-- Use iterative refinement (start basic, then add details)
-
-## Error Code Reference
-
-### Structured Prompt Errors
-
-**insufficient_data**
-
-```json
-{
-  "error": "insufficient_data",
-  "available_fields": ["title"],
-  "minimum_required": ["title", "company"]
-}
-```
-
-**Solution:** Provide more complete input information
-
-**format_violation**
-
-```json
-{ "error": "format_violation", "note": "Invalid JSON syntax in response" }
-```
-
-**Solution:** Check temperature settings, try different platform
-
-**parsing_error**
-
-```json
-{
-  "error": "parsing_error",
-  "issue": "Unrecognized salary format",
-  "raw_text": "$ABC per hour"
-}
-```
-
-**Solution:** Provide clearer, standard format input data
-
-**ambiguous_input**
-
-```json
-{
-  "clarifying_question": "What specific role and company are you asking about?",
-  "parsing_confidence": "low"
-}
-```
-
-**Solution:** Be more specific in your input
-
-### Simple Prompt Issues
-
-**Generic Output:** Prompt needs more specific context and constraints
-**Incomplete Response:** Break into smaller, focused requests
-**Wrong Format:** Clarify desired output format in prompt
-**Irrelevant Content:** Add more specific examples and use cases
-
-## Getting Help
-
-### Before asking for help:
-
-1. Try the prompt with our test inputs first
-2. Test on multiple AI platforms
-3. Check if similar issues are documented here
-4. Read the prompt instructions carefully
-
-### When to open an issue:
-
-- Prompt consistently fails across platforms
-- Documentation is unclear or incorrect
-- Found a bug in the prompt logic
-- Need a new prompt for common use case
-
-### How to report problems:
-
-1. **What prompt you used** (exact filename)
-2. **What platform** (ChatGPT 4, Claude 3, etc.)
-3. **Your input** (sanitized if needed)
-4. **Expected vs. actual output**
-5. **Any error messages**
-6. **Temperature and other settings used**
-
-### Community resources:
-
-- Check existing GitHub issues
-- Browse discussions for similar problems
-- Share successful modifications with others
-
-## Success Tips
-
-### Make prompts work better:
-
-1. **Be specific** - More detail usually = better results
+1. **Be specific** - More detail = better results
 2. **Use examples** - Show what good output looks like
 3. **Provide context** - Explain your situation and constraints
-4. **Test iteratively** - Start simple, add complexity gradually
-5. **Follow temperature guidelines** - 0.1 for structured, 0.3 for simple
+4. **Set expectations** - Specify format and length
 
-### Platform selection guide:
+### For Structured Prompts
 
-- **For business documents:** ChatGPT 4
-- **For data analysis:** Claude 3
-- **For creative content:** Any platform works well
-- **For automation:** Claude 3 or ChatGPT 4
-- **Budget option:** GPT-3.5 (may need prompt adjustments)
-
-### Quality assurance checklist:
-
-- [ ] Prompt produces expected output format
-- [ ] Results are immediately usable
-- [ ] Works consistently across test cases
-- [ ] Handles edge cases gracefully
-- [ ] Error messages are helpful when things go wrong
+1. **Use exact templates** - Don't modify compatibility headers
+2. **Validate inputs** - Ensure data is clean and complete
+3. **Check outputs** - Use JSON/CSV validators
+4. **Handle errors** - Review error messages for guidance
 
 ## Performance Expectations
 
@@ -382,11 +155,29 @@ Hope this helps!
 - Edge cases: >85% success
 - Error recovery: >90% helpful responses
 
-### When to Expect Issues
+## When to Get Help
 
-- Very long inputs (>5000 words)
-- Highly ambiguous requests
-- Mixing multiple prompt types
-- Using unsupported platforms
+### Before asking for help
 
-Remember: These prompts are tested and working - most issues come from platform differences or input formatting. When in doubt, try the exact test cases first!
+1. Try prompt with provided test inputs first
+2. Test on multiple AI platforms
+3. Check if similar issues documented here
+4. Read prompt instructions carefully
+
+### How to report problems
+
+Include:
+
+1. Exact prompt filename used
+2. AI platform (ChatGPT 4, Claude 3, etc.)
+3. Your input (remove sensitive data)
+4. Expected vs actual output
+5. Temperature and other settings
+
+### Community resources
+
+- Check GitHub issues for similar problems
+- Browse discussions for solutions
+- Share successful modifications
+
+Most issues stem from input formatting or platform differences. When in doubt, try exact test cases first.
