@@ -2,12 +2,12 @@
   "description": "Test configuration for Universal LLM Prompts",
   "test_categories": {
     "jobs": {
-      "prompt_file": "prompts/structured/templates/json-job-extraction.md",
+      "prompt_file": "prompts/structured/templates/json-job-extraction-structured.md",
       "input_folder": "tests/inputs/jobs/",
       "expected_format": "JSON"
     },
     "messages": {
-      "prompt_file": "prompts/structured/templates/csv-message-export.md",
+      "prompt_file": "prompts/structured/templates/csv-message-export-structured.md",
       "input_folder": "tests/inputs/messages/",
       "expected_format": "CSV"
     },
@@ -22,13 +22,138 @@
       "expected_format": "TEXT"
     },
     "sentiment": {
-      "prompt_file": "prompts/structured/classification/sentiment-analysis.md",
-      "input_folder": "tests/inputs/sentiment/",
+      "prompt_file": "prompts/structured/few-shot/sentiment-analysis.md",
+      "input_folder": "tests/inputs/classification/",
       "expected_format": "JSON"
     },
     "email_classification": {
       "prompt_file": "prompts/structured/classification/email-classifier-structured.md",
-      "input_folder": "tests/inputs/emails/",
+      "input_folder": "tests/inputs/classification/",
+      "expected_format": "JSON"
+    },
+    "content_classification": {
+      "prompt_file": "prompts/structured/few-shot/content-classification-structured.md",
+      "input_folder": "tests/inputs/classification/",
+      "expected_format": "JSON"
+    },
+    "ticket_routing": {
+      "prompt_file": "prompts/structured/few-shot/ticket-routing-structured.md",
+      "input_folder": "tests/inputs/classification/",
+      "expected_format": "JSON"
+    },
+    "competitor_analysis": {
+      "prompt_file": "prompts/simple/business/competitor-analysis-simple.md",
+      "input_folder": "tests/inputs/business/",
+      "expected_format": "TEXT"
+    },
+    "presentation": {
+      "prompt_file": "prompts/simple/communication/presentation-simple.md",
+      "input_folder": "tests/inputs/communication/",
+      "expected_format": "TEXT"
+    },
+    "blog_outline": {
+      "prompt_file": "prompts/simple/creative/blog-outline-simple.md",
+      "input_folder": "tests/inputs/creative/",
+      "expected_format": "TEXT"
+    },
+    "social_media": {
+      "prompt_file": "prompts/simple/creative/social-media-simple.md",
+      "input_folder": "tests/inputs/creative/",
+      "expected_format": "TEXT"
+    },
+    "quiz_maker": {
+      "prompt_file": "prompts/simple/education/quiz-maker-simple.md",
+      "input_folder": "tests/inputs/education/",
+      "expected_format": "TEXT"
+    },
+    "email_writer": {
+      "prompt_file": "prompts/simple/communication/email-writer-simple.md",
+      "input_folder": "tests/inputs/communication/",
+      "expected_format": "TEXT"
+    },
+    "financial_analysis": {
+      "prompt_file": "prompts/simple/finance/financial-analysis-simple.md",
+      "input_folder": "tests/inputs/finance/",
+      "expected_format": "TEXT"
+    },
+    "healthcare_communication": {
+      "prompt_file": "prompts/simple/healthcare/healthcare-communication-simple.md",
+      "input_folder": "tests/inputs/healthcare/",
+      "expected_format": "TEXT"
+    },
+    "interview_prep": {
+      "prompt_file": "prompts/simple/interview/interview-prep-simple.md",
+      "input_folder": "tests/inputs/interview/",
+      "expected_format": "TEXT"
+    },
+    "legal_analysis": {
+      "prompt_file": "prompts/simple/legal/legal-document-analysis-simple.md",
+      "input_folder": "tests/inputs/legal/",
+      "expected_format": "TEXT"
+    },
+    "task_organizer": {
+      "prompt_file": "prompts/simple/productivity/task-organizer-simple.md",
+      "input_folder": "tests/inputs/productivity/",
+      "expected_format": "TEXT"
+    },
+    "meeting_summary": {
+      "prompt_file": "prompts/simple/productivity/meeting-summary-simple.md",
+      "input_folder": "tests/inputs/productivity/",
+      "expected_format": "TEXT"
+    },
+    "data_analyzer": {
+      "prompt_file": "prompts/simple/productivity/data-analyzer-simple.md",
+      "input_folder": "tests/inputs/research/",
+      "expected_format": "TEXT"
+    },
+    "decision_helper": {
+      "prompt_file": "prompts/simple/productivity/decision-helper-simple.md",
+      "input_folder": "tests/inputs/communication/",
+      "expected_format": "TEXT"
+    },
+    "real_estate_analysis": {
+      "prompt_file": "prompts/simple/real-estate/real-estate-analysis-simple.md",
+      "input_folder": "tests/inputs/real-estate/",
+      "expected_format": "TEXT"
+    },
+    "resume_builder": {
+      "prompt_file": "prompts/simple/resume/resume-builder-simple.md",
+      "input_folder": "tests/inputs/resume/",
+      "expected_format": "TEXT"
+    },
+    "advanced": {
+      "prompt_file": "prompts/structured/advanced/chain-of-thought-structured.md",
+      "input_folder": "tests/inputs/advanced/",
+      "expected_format": "JSON"
+    },
+    "context_management": {
+      "prompt_file": "prompts/structured/advanced/context-management-structured.md",
+      "input_folder": "tests/inputs/templates/",
+      "expected_format": "JSON"
+    },
+    "system_roles": {
+      "prompt_file": "prompts/structured/system-roles/code-reviewer-role.md",
+      "input_folder": "tests/inputs/system-roles/",
+      "expected_format": "TEXT"
+    },
+    "content_summarizer": {
+      "prompt_file": "prompts/structured/system-roles/content-summarizer-role.md",
+      "input_folder": "tests/inputs/system-roles/",
+      "expected_format": "TEXT"
+    },
+    "llm_mentor": {
+      "prompt_file": "prompts/structured/system-roles/llm-mentor-role.md",
+      "input_folder": "tests/inputs/system-roles/",
+      "expected_format": "TEXT"
+    },
+    "faq_generation": {
+      "prompt_file": "prompts/structured/templates/faq-generation-structured.md",
+      "input_folder": "tests/inputs/docs/",
+      "expected_format": "JSON"
+    },
+    "error_handling": {
+      "prompt_file": "prompts/structured/templates/error-handling-template.md",
+      "input_folder": "tests/inputs/templates/",
       "expected_format": "JSON"
     }
   },
@@ -61,21 +186,10 @@
   "quality_standards": {
     "min_test_cases": 3,
     "required_platforms": ["chatgpt_4", "claude_3"],
-    "max_re,sponse_time": "30_seconds"
+    "max_response_time": "30_seconds"
   },
-  "advanced": {
-    "prompt_file": "prompts/structured/advanced/chain-of-thought-structured.md",
-    "input_folder": "tests/inputs/advanced/",
-    "expected_format": "JSON"
-  },
-  "system_roles": {
-    "prompt_file": "prompts/structured/system-roles/code-reviewer-role.md",
-    "input_folder": "tests/inputs/system-roles/",
-    "expected_format": "TEXT"
-  },
-  "templates": {
-    "prompt_file": "prompts/templates/error-handling-template.md",
-    "input_folder": "tests/inputs/templates/",
-    "expected_format": "JSON"
+  "template_paths": {
+    "simple_template": "prompts/templates/simple-prompt-template.md",
+    "structured_template": "prompts/templates/structured-prompt-template.md"
   }
 }

@@ -28,8 +28,7 @@ Use: `prompts/simple/communication/presentation-simple.md`
 Input: Key points from business plan and analysis
 Output: Investor presentation outline
 
-**Time saved:** 20+ hours → 4 hours
-**Quality improvement:** Professional, interconnected documents
+**Benefits:** Professional, interconnected documents with consistent messaging and strategic alignment
 
 ---
 
@@ -53,12 +52,11 @@ Input: Content themes and audience segments
 Output: Email sequence for content promotion
 
 **Step 4: Performance Tracking**
-Use: `prompts/structured/templates/data-analyzer.md`
+Use: `prompts/simple/productivity/data-analyzer-simple.md`
 Input: Campaign metrics and goals
 Output: Tracking framework and KPIs
 
-**Time saved:** 15+ hours → 3 hours
-**Consistency:** Unified messaging across all channels
+**Benefits:** Unified messaging across all channels with systematic approach to content creation and measurement
 
 ---
 
@@ -82,12 +80,11 @@ Input: Course structure and policies
 Output: Parent/student communication templates
 
 **Step 4: Progress Analysis**
-Use: `prompts/simple/research/data-analyzer-simple.md`
+Use: `prompts/simple/productivity/data-analyzer-simple.md`
 Input: Student performance data
 Output: Insights for curriculum improvement
 
-**Time saved:** 25+ hours → 5 hours
-**Quality:** Comprehensive, aligned curriculum
+**Benefits:** Comprehensive, aligned curriculum with built-in assessment and communication framework
 
 ---
 
@@ -115,8 +112,7 @@ Use: `prompts/simple/productivity/decision-helper-simple.md`
 Input: Multiple job offers or options
 Output: Structured decision framework
 
-**Time saved:** 12+ hours → 2 hours
-**Success rate:** Higher interview-to-offer conversion
+**Benefits:** Systematic approach to job searching with professional materials and strategic decision-making
 
 ---
 
@@ -125,12 +121,12 @@ Output: Structured decision framework
 **Scenario:** Analyzing customer feedback to improve products
 
 **Step 1: Data Processing**
-Use: `prompts/structured/classification/sentiment-analysis.md`
+Use: `prompts/structured/few-shot/sentiment-analysis.md`
 Input: Customer reviews and feedback
 Output: Sentiment classification for each comment
 
 **Step 2: Insight Generation**
-Use: `prompts/simple/research/data-analyzer-simple.md`
+Use: `prompts/simple/productivity/data-analyzer-simple.md`
 Input: Sentiment data and patterns
 Output: Key insights and recommendations
 
@@ -144,8 +140,29 @@ Use: `prompts/simple/communication/meeting-summary-simple.md`
 Input: Analysis results and action plan
 Output: Executive summary for stakeholders
 
-**Time saved:** 10+ hours → 1 hour
-**Accuracy:** Systematic analysis vs. manual review
+**Benefits:** Systematic analysis approach with actionable insights and clear communication to stakeholders
+
+---
+
+## Workflow Efficiency
+
+### What Makes These Workflows Effective:
+
+1. **Systematic Approach:** Each step builds on the previous one
+2. **Consistent Quality:** Professional templates ensure reliable outputs
+3. **Reduced Decision Fatigue:** Clear structure eliminates guesswork
+4. **Reusable Processes:** Templates can be applied to similar projects
+5. **Cross-Platform Reliability:** Works consistently across AI platforms
+
+### Expected Outcomes:
+
+- **Faster Initial Drafts:** Starting with professional templates
+- **Higher Quality Results:** Structured approach catches important elements
+- **Better Organization:** Systematic workflow prevents missed steps
+- **Easier Collaboration:** Standardized outputs facilitate team review
+- **Reduced Iterations:** Comprehensive initial approach minimizes revisions
+
+_Note: Actual time savings will vary based on user experience, project complexity, and specific requirements. These workflows are designed to provide structure and quality rather than specific time guarantees._
 
 ---
 
